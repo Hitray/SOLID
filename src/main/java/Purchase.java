@@ -1,12 +1,17 @@
 import java.util.HashMap;
 import java.util.Map;
 
+
+
+
 public class Purchase {
 
     private final Map<String, Integer> products;
     private final Map<String, Integer> purchases = new HashMap<>();
 
 
+   
+    
     public Purchase() {
 
         GenDase dataBase = Gate.getInstance();
@@ -19,6 +24,8 @@ public class Purchase {
 
     }
 
+  
+    
     public void printPurchases() {
 
         long sum = 0;
@@ -32,6 +39,7 @@ public class Purchase {
     }
 
 
+   
     public void printShowCase() {
         System.out.println("В МАГАЗИНЕ В НАЛИЧИИ");
         for (Map.Entry<String, Integer> productAndPrice : products.entrySet()) {
