@@ -1,10 +1,14 @@
 import java.util.Scanner;
 
+
+
 public class Main {
 
     public static void main(String[] args) {
 
 
+       
+        
         var purchase = new Purchase();
         purchase.printShowCase();
 
@@ -18,6 +22,7 @@ public class Main {
             purchase.addPurchase(product, count);
         }
 
+       
         purchase.printPurchases();
     }
 }
